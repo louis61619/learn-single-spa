@@ -1,7 +1,6 @@
-module.exports = function(content) {
-
-  // 必須導出js或是二進制
-  return `export default ${JSON.stringify({
-    aaa: 'fjeoifjwo'
-  })}`
-}
+/**
+ * @see https://github.com/webpack/webpack/wiki/Loader-Specification
+ */
+module.exports = function (content) {
+  return 'module.exports = ' + JSON.stringify(content.toString());
+};

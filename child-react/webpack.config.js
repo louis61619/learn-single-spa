@@ -1,4 +1,5 @@
 const { merge } = require("webpack-merge");
+const path = require('path')
 const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
 
 module.exports = (webpackConfigEnv, argv) => {
@@ -18,7 +19,7 @@ module.exports = (webpackConfigEnv, argv) => {
     return item
   })
 
-  console.log(defaultConfig.module.rules)
+  // console.log(defaultConfig.module.rules)
 
   return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
@@ -34,7 +35,7 @@ module.exports = (webpackConfigEnv, argv) => {
       ],
     },
     resolveLoader: {
-      modules: ["node_modules", "./loader"]
+      modules: ["node_modules", path.resolve(__dirname, "./loader")]
     },
   });
 };

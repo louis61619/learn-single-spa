@@ -1,0 +1,28 @@
+{
+  "name": "learn-single-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "./*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:child-react": "npm run start --workspace=@louis61619/child-react -- --port 8500 ",
+    "start:root": "npm run start -w @louis61619/root-config "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louis61619/learn-single-spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louis61619/learn-single-spa/issues"
+  },
+  "homepage": "https://github.com/louis61619/learn-single-spa#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
