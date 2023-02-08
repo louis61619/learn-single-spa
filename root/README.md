@@ -1,0 +1,1 @@
+https://www.linkedin.com/pulse/understanding-single-spa-roothost-rany-elhousieny-phd%E1%B4%AC%E1%B4%AE%E1%B4%B0/
